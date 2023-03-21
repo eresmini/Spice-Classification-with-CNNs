@@ -5,11 +5,6 @@ Created on Thu Apr 14 21:20:27 2022
 @author: Emma Resmini
 """
 
-######################
-# Emma Resmini
-# Semester Project
-######################
-
 # packages for this program
 import tensorflow as tf
 from tensorflow import keras
