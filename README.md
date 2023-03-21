@@ -37,10 +37,10 @@ I used the following cooking spices from my kitchen:
 - Tarragon Leaves
 - Tumeric
 
-I created a home setup to take the images. The setup consisted of two lamps to prevent shadows, stacked books acting as a makeshift tripod, and sketch paper marking where the equipment and spices should be placed for consistency. I used my iPhone 12 to take the images.
+I created a home setup to take the images. The setup consisted of two lamps to prevent shadows, stacked books acting as a makeshift tripod, and sketch paper marking where the equipment and spices should be placed for consistency. I used my iPhone 12 to take the images.  
 ![Picture1](https://user-images.githubusercontent.com/70169642/226624492-f96bfc5a-e63b-4f48-9436-c34f3afdbb4f.jpg)
 
-In total, I took 25 images of each spice. However, these images were high quality and too large to quickly run through a neural network, so I used an image cropper to create 256x256 pixel images. (Code for image cropper from Source: https://stackoverflow.com/questions/53501331/crop-entire-image-with-the-same-cropping-size-with-pil-in-python.) This resulted in approx. 100 images from each original image, with a total of 93,000 images.
+In total, I took 25 images of each spice. However, these images were high quality and too large to quickly run through a neural network, so I used an image cropper to create 256x256 pixel images. (Code for image cropper from Source: https://stackoverflow.com/questions/53501331/crop-entire-image-with-the-same-cropping-size-with-pil-in-python.) This resulted in approx. 100 images from each original image, with a total of 93,000 images.  
 ![image](https://user-images.githubusercontent.com/70169642/226625840-728fd69c-8992-4f52-9c5b-f246335962f8.png)
 
 ## Reading in Data
