@@ -43,6 +43,9 @@ I created a home setup to take the images. The setup consisted of two lamps to p
 In total, I took 25 images of each spice. However, these images were high quality and too large to quickly run through a neural network, so I used an image cropper to create 256x256 pixel images. (Code for image cropper from Source: https://stackoverflow.com/questions/53501331/crop-entire-image-with-the-same-cropping-size-with-pil-in-python.) This resulted in approx. 100 images from each original image, with a total of 93,000 images.
 ![image](https://user-images.githubusercontent.com/70169642/226625840-728fd69c-8992-4f52-9c5b-f246335962f8.png)
 
+## Reading in Data
+I used the following function from Keras to read in the data: https://keras.io/api/preprocessing/image/. Each collection of spice images was in a separate subfolders, or subdirectory, within the main directory. This meant there were 31 subfolders to read in from. Using the image_dataset_from_directory() function returned a dataset with batches of images from the subdirectories. The dataset was split into 20%/80% validation and training. Additionally, the data was shuffled as it was read in to ensure randomness of sample, though I set a a random seed to achieve consistent results from the model.
+
 ## CNN Model
 Python - Keras/Tensorflow
 To start, I rescaled the images to normalize the RBG values. The model consisted of 4 layers of alternating Conv2D and MaxPooling2D, followed by a flatten layer, one desnse layer with relu activation, and a second dense layer with softmax activation. Adding additional layers did little to change the accuracy of the model, so I opted for fewer layers to help speed up the model fitting time. When compiling, I used the adam optimizer, sparse categorical crossentropy for loss, and had the model return accuracy metrics. The model was run the model on 30 epochs.
