@@ -1,4 +1,4 @@
-# Spices-Dataset
+# Spice Image Classification
 
 This project involved using convolutional neural networks (CNNs) to identify cooking spices by color and texture.
 
